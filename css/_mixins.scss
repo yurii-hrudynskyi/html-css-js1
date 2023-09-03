@@ -1,0 +1,29 @@
+@mixin no-outline {
+    outline: none;
+    background: transparent;
+    &::before {
+        display: none;
+    }
+}
+
+@mixin margin-padding-0 {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@mixin hyperlinks-reset {
+    color: #f7f4f1;
+    text-decoration: none;
+}
+
+@mixin button-style-reset {
+    border: none;
+    text-align: right;
+}

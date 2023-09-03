@@ -1,0 +1,420 @@
+.photo-and-rewiev {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    background-color:#f8f5f2;
+
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.photo-and-rewiev__header {
+    width: auto;
+    margin: 0 auto;
+}
+
+.barber-shop-button {
+    @include hyperlinks-reset;
+    background-color: #f8f5f2;
+    outline: 2px solid #e5ddd5;
+    display: inline-block;
+
+    width: 160px;
+    height: 48px;
+    box-sizing: border-box;
+    
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 11px;
+    padding-bottom: 6px;
+    text-align: center;
+    
+    &:hover{
+        background-color: #e5ddd5; 
+        transition: 300ms; 
+    }
+}
+
+.photo-and-rewiev__main-link {
+    display: none;
+}
+
+.photo-and-rewiev__title {
+    @include margin-padding-0;
+
+    width: 100%;
+
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.photogallery__title{
+    @include margin-padding-0;
+
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.photo-and-rewiev__wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #e5ddd5;
+}
+
+.photo-and-rewiev__wrapper--forth {
+    margin-bottom: 10px;
+}
+
+.photo-and-rewiev__rewiev {
+    padding-left: 22px;
+    padding-right: 26px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+}
+
+.photo-and-rewiev__rewiev-last {
+    padding-bottom: 0;
+}
+
+
+.photo-and-rewiev__custumer-name {
+    @include margin-padding-0;
+    color: black;
+}
+
+.photo-and-rewiev__comment {
+    display: inline-block;
+    @include margin-padding-0;
+
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.photo-and-rewiev__list {
+    @include reset-list;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.photo-and-rewiev__item {
+    color: black;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 15px;
+    line-height: 20px;
+
+    flex-basis: 70px;
+    margin-bottom: 26px;
+    margin-right: 25px;
+}
+
+.photo-and-rewiev__haircut{
+    background-image: url(/img/service-icons-sprite.png);
+    background-repeat: no-repeat;
+}
+
+.photo-and-rewiev__shaving{
+    background-image: url(/img/service-icons-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0px -40px;
+}
+
+.photo-and-rewiev__mustache {
+    background-image: url(/img/service-icons-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0px -85px;
+    flex-basis: 105px; 
+}
+
+.pricing-and-services {
+    position: relative;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    margin: 0 auto;
+
+    background-color:#353535;
+
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+.pricing-and-services__caption {
+    font-size: 27px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.pricing-and-services__table {
+    border: 1px solid #484848;
+    border-collapse: collapse;
+    
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #484848;
+    border-collapse: collapse;
+    
+    font-size: 17px;
+    text-align: left;
+}
+
+.pricing-and-services__est-lenght {
+    display: inline;
+}
+
+.pricing-and-services__sequence-number {
+    display: none;
+}
+
+.pricing-and-services__est-lenght-cell {
+    display: none;
+}
+
+.sales-time {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 100px;
+    padding-right: 20px;
+
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    box-sizing: border-box;
+    border: 1px solid #484848;
+
+    background-image: url(/img/clock-illustration.png);
+    background-repeat: no-repeat;
+    background-position: 20px 15px;
+}
+
+.gallery{
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f5f2;
+}
+
+.gallery-item{
+    max-width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#gallery-modal .modal-img{
+    width: 100%;
+}
+
+@media (min-width:$tablet-width) {
+    .photo-and-rewiev {
+        position: relative;
+        width: 768px;
+        margin: 0 auto;
+        padding-left: 65px;
+        padding-right: 65px;
+
+        box-sizing: border-box;
+    }
+
+
+    .photo-and-rewiev__main-link {
+        display: inline-block;
+    }
+
+    .photo-and-rewiev__header-wrapper {
+        @include margin-padding-0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-top: 55px;
+        padding-bottom: 40px;
+
+    }
+
+    .photo-and-rewiev__title {
+        @include margin-padding-0;
+        flex-basis: 255px;
+       
+        font-weight: normal;
+        font-size: 35px;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .photo-and-rewiev__wrapper {
+        @include margin-padding-0;
+        width: auto;
+
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+    .photo-and-rewiev__rewiev {
+        @include margin-padding-0;
+        flex-basis: 100%;
+
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 100;
+        justify-content: space-between;
+
+        padding-top: 45px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+
+    .photo-and-rewiev__wrapper--third {
+        flex-shrink: 0;
+    }
+
+    .pricing-and-services {
+        width: 768px;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: 0 auto;
+    }
+   
+    .pricing-and-services__caption {
+        font-size: 40px;
+        font-weight: bold;
+
+        margin-bottom: 50px;
+    }
+
+    th, td {
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+
+    .pricing-and-services__est-lenght {
+        display: none;
+    }
+    
+    .pricing-and-services__sequence-number {
+        display: inline-block;
+        width: 100%;
+        
+    }
+    
+    .pricing-and-services__est-lenght-cell {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .pricing-and-services::after {
+        display: none;
+    }
+
+    .sales-time {
+        font-size: 30px;
+        
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 200px;
+        padding-right: 100px;
+    
+        margin-top: 12px;
+        display: flex;
+    
+        box-sizing: border-box;
+        background-position: 80px 25px;
+    }
+
+    .sales-time_br {
+        display: none;
+    }
+
+    .gallery{
+        width: 768px;
+    }
+
+}
+
+@media (min-width:$desktop-width) {
+    .photo-and-rewiev {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        padding-left: 120px;
+        padding-right: 120px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        box-sizing: border-box;
+    }
+
+
+    .photo-and-rewiev__header-wrapper {
+        padding-top: 55px;
+        padding-bottom: 80px;
+        width: 100%;
+
+    }
+
+    .photo-and-rewiev__wrapper--second, .photo-and-rewiev__wrapper--third, .photo-and-rewiev__wrapper--forth {
+        width: 290px;
+        flex-direction: column;
+    }
+
+    .photo-and-rewiev__wrapper--third, .photo-and-rewiev__wrapper--forth {
+        margin-left: 42px;
+    }
+
+    .photo-and-rewiev::after {
+        display: none;
+    }
+
+    .pricing-and-services__caption {
+        margin-bottom: 72px;
+        text-align: left;
+    }
+
+    .pricing-and-services {
+        width: 1200px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .sales-time {
+        display: none;
+    }
+
+    .gallery{
+        width: 1200px;
+    }
+}

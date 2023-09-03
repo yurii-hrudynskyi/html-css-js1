@@ -1,0 +1,213 @@
+.page-footer {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    color: white;
+
+    outline: 1px solid #3f3f3f;
+    background-color: #173475;
+}
+
+.contact-info {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-info__barbershop-name {
+    display: block;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-info__location {
+    @include margin-padding-0;
+
+    padding-top: 12px;
+    text-align: center;
+}
+
+.contact-info__telephone {
+    display: inline-block;
+    width: 280px;
+
+    margin-top: 18px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 73px;
+
+    outline: 1px solid white;
+
+    box-sizing: border-box;
+
+    &:hover {
+        outline: 1px solid #525252; 
+    }
+
+    &:active {
+        outline: none;
+        color: #676767;
+    }
+}
+
+
+
+.page-footer__form {
+    margin-top: 107px;
+}
+
+.page-footer__index {
+    margin-top: 37px;
+    padding-top: 31px;
+    padding-bottom: 20px;
+}
+
+.footer-map{
+   display: flex;
+   margin-top: 20px;
+   margin-left: 50px;
+}
+
+.opening-hours{
+    display: none;
+}
+
+
+@media (min-width:$tablet-width) {
+    .page-footer {
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+        margin-top: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 768px;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+    }
+
+    .contact-info {
+        @include margin-padding-0;
+    }
+
+    .contact-info__barbershop-name {
+        @include margin-padding-0;
+        display: inline-block;
+        
+    }
+    
+    .contact-info__location {
+        @include margin-padding-0;
+    
+        text-align: left;
+        margin-top: 10px;
+    }
+    
+    .contact-info__telephone {
+        @include margin-padding-0;
+        display: inline-block;
+    }
+
+    
+    .contact-info__telephone {
+        width: 145px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .copyright {
+        @include margin-padding-0;
+
+        padding-top: 23px;
+        margin-left: 330px;
+    }
+    
+    .copyright__header {
+        @include margin-padding-0;
+        text-align: center;
+    }
+    
+    .copyright__link {
+        @include hyperlinks-reset;
+        display: inline-block;
+        width: auto;
+    
+        margin-left: 15px;
+        margin-right: 0px;
+        margin-top: 10px;
+    
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .page-footer__form {
+        margin-top: 25px;
+    }
+
+    .page-footer__index {
+        margin-top: 0px;
+        padding-top: 30px;
+    }
+
+    .map{
+        margin-top: -100px;
+        margin-left: -50px;
+     }
+
+     .opening-hours{
+        display: block;
+        margin-left: 100px;
+    }
+
+    .opening-hours ul{
+        @include reset-list;
+    }
+    
+}
+
+@media (min-width:$desktop-width) {
+    .page-footer {
+        width: 1200px;
+        padding-top: 30px;
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+    .contact-info__location, {
+        margin-left: 40px;
+    }
+
+    .contact-info__telephone{
+        margin-left: 20px;
+    }
+
+    .opening-hours{
+        margin-left: 250px;
+    }
+
+    .map{
+        margin-left: 140px;
+    }
+
+    .page-footer__form {
+        margin-top: 50px;
+    }
+
+    .page-footer__index {
+        margin-top: 20px;
+    }
+
+}
