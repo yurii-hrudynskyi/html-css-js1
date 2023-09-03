@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PISHA BAUDIENSTLEISTUNGEN</title>
+    <link rel="preload" href="fonts/PTSansNarrow-Regular.ttf" />
+    <link rel="preload" href="fonts/fonts/PTSansNarrow-Bold.ttf" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="form">
+    <header class="page-header">
+      <a class="page-header__logo page-header__logo-our-works">
+        <img
+          class="page-header__logo-image"
+          src="./img/barbershop-logo.png"
+          width="226"
+          height="30"
+          alt="Logo"
+        />
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Open Menu</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Über uns</a>
+            </li>
+            <li class="site-list__item">
+              <a href="our works.html">Unsere Projekte</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Termin</a>
+            </li>
+            <li class="site-list__item">
+              <a href="contacts.html">Kontakte</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__login">
+                <img src="./img/Emblem.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="form_container">
+      <form
+        class="main-form"
+        action="https://formsubmit.co/pisha-baudienstleistungen@outlook.de"
+        method="POST"
+      >
+        <div class="main-form__header-wrapper">
+          <h3 class="main-form__header">TERMINFORMULAR</h3>
+          <a href="###" class="main-form__main-link barber-shop-button"
+            >Hauptseite</a
+          >
+        </div>
+
+        <fieldset class="main-form__fieldset main-form__name">
+          <div class="main-form__name-wrapper">
+            <input type="hidden" name="_subject" value="Neue Nachricht" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://https://pisha-dienstleistungen.com/thanks.html"
+            />
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Nachname"
+              pattern="^[a-zA-Z]+$"
+              required
+              autofocus
+            />
+            <input
+              type="text"
+              name="first-name"
+              placeholder="Vorname"
+              pattern="^[a-zA-Z]+$"
+              required
+            />
+            <input
+              type="text"
+              name="middle-name"
+              placeholder="Zweiter Vorname"
+              pattern="^[a-zA-Z]+$"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="main-form__fieldset main-form__contact">
+          <div class="main-form__contact-wrapper">
+            <input type="tel" name="telephone" placeholder="Telefon" />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="main-form__fieldset main-form__additional-info">
+          <textarea
+            name="additional-info"
+            class="main-form__additional-info-textarea"
+            cols="31"
+            rows="5"
+            placeholder="Zusätzliche Information"
+          ></textarea>
+        </fieldset>
+
+        <button
+          type="submit"
+          class="main-form__submit-button barber-shop-button"
+        >
+          Schicken
+        </button>
+      </form>
+    </div>
+    <footer class="page-footer">
+      <section class="contact-info">
+        <span class="contact-info__barbershop-name"
+          >Pisha Baudienstleistungen</span
+        >
+        <address class="contact-info__location">
+          Bingener Str. 28,<br />
+          80993 München
+        </address>
+        <span class="contact-info__telephone">0162 9154113</span>
+      </section>
+
+      <section class="opening-hours">
+        <h4>Öffnungszeiten</h4>
+        <ul>
+          <li>Montag: 9:00 - 18:00</li>
+          <li>Dienstag: 9:00 - 18:00</li>
+          <li>Mittwoch: 9:00 - 18:00</li>
+          <li>Donnerstag: 9:00 - 18:00</li>
+          <li>Freitag: 9:00 - 18:00</li>
+          <li>Samstag: 09:00 - 16:00</li>
+          <li>Sonntag: Geschlossen</li>
+        </ul>
+      </section>
+
+      <section class="col map">
+        <div class="col footer-map">
+          <div class="col">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10640.656782928494!2d11.5238663!3d48.1841878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x441c7818fd9a9721%3A0xdd26ae728d471466!2sPisha%20Baudienstleistungen!5e0!3m2!1suk!2sde!4v1679499989528!5m2!1suk!2sde"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      let navMain = document.querySelector(".main-nav");
+      let navToggle = document.querySelector(".main-nav__toggle");
+
+      navMain.classList.remove("main-nav--nojs");
+
+      navToggle.addEventListener("click", function () {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+        } else {
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+        }
+      });
+    </script>
+  </body>
+</html>
